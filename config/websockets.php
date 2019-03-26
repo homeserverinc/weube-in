@@ -107,18 +107,20 @@ return [
          * certificate chain of issuers. The private key also may be contained
          * in a separate file specified by local_pk.
          */
-        'local_cert' => env('PUSHER_APP_SERVER_LOCAL_CERT'),
+        'local_cert' => env('PUSHER_APP_SERVER_LOCAL_CERT'), //env('PUSHER_APP_SERVER_LOCAL_CERT'),
 
         /*
          * Path to local private key file on filesystem in case of separate files for
          * certificate (local_cert) and private key.
          */
-        'local_pk' => env('PUSHER_APP_SERVER_LOCAL_PKEY'),
+        'local_pk' =>  env('PUSHER_APP_SERVER_LOCAL_PKEY'), /* env('PUSHER_APP_SERVER_LOCAL_PKEY') */
 
         /*
          * Passphrase for your local_cert file.
          */
         'passphrase' => null,
+
+        'verify_peer' => false,
     ],
 
     /*

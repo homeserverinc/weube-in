@@ -40,7 +40,11 @@ return [
                 'encrypted' => env('PUSHER_APP_SERVER_SSL'),
                 'host' => env('PUSHER_APP_SERVER_ADDRESS'),
                 'port' => env('PUSHER_APP_SERVER_PORT'),
-                'scheme' => env('PUSHER_APP_SERVER_SSL') ? 'https' : 'http'
+                'scheme' => env('PUSHER_APP_SERVER_SSL') ? 'https' : 'http',
+                'curl_options' => [
+                    CURLOPT_SSL_VERIFYHOST => 0,
+                    CURLOPT_SSL_VERIFYPEER => 0,
+                ]
             ],
         ],
 
