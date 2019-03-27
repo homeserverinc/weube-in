@@ -1,4 +1,7 @@
 <IfModule mod_rewrite.c>
+	# Turn Off mod_dir Redirect For Existing Directories
+	DirectorySlash Off
+
 	RewriteEngine On
 	
 	#https
