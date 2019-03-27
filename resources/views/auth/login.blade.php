@@ -41,11 +41,11 @@ html,body{
                 <div class="form-group">
                     <button class="btn btn-info btn-lg btn-block">Sing in</button>
                 </div>
-                <div class="row">
+                {{--  <div class="row">
                     <a class="btn btn-link text-light" href="{{ route('password.request') }}">
                         Forgot Your Password?
                     </a>
-                </div>
+                </div>  --}}
             </form>  
         </div>
     </div>
